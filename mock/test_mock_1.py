@@ -9,10 +9,10 @@ def test_find_commit():
 
 
     
-def test_find_any():
-    author = author_by_id("123", Mock()) is not None
-
 # def test_find_any():
-#     mbranch = MagicMock()
-#     mbranch.__getitem__.return_value = {"author": "test"}
-#     assert author_by_id("123", mbranch) == "test"
+#     author = author_by_id("123", Mock()) is not None
+
+def test_find_any():
+    mbranch = MagicMock()
+    mbranch.__getitem__.return_value = {"author": "test"}
+    assert author_by_id("123", mbranch) == "test"
