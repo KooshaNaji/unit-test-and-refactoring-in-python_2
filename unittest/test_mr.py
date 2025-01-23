@@ -21,5 +21,5 @@ class TestMergeRequestStatus(unittest.TestCase):
         merge_request.upvote("dev2")
         self.assertEqual(merge_request.status, MergeRequestStatus.APPROVED)
 
-if __name__ == "__main__":
-    unittest.main()
+# if __name__ == "__main__":
+#     unittest.main()

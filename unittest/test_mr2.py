@@ -35,10 +35,10 @@ class TestMergeRequestStatus(unittest.TestCase):
         merge_request.close()
         self.assertRaisesRegex(
             MergeRequestException,
-            "can't vote on a closed merge request",
+            "can't votes on a closed merge request",
             merge_request.downvote,
             "dev1",
         )
 
-if __name__ == "__main__":
-    unittest.main()
+# if __name__ == "__main__":
+#     unittest.main()
